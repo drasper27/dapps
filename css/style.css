@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#one{
+    background-color: blue;
+    color: white;
+   
+}
+
+
+#one .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  30px;
+}
+#one .wrapper .info{
+width: 40%;
+}
+
+#one .wrapper .info h2{
+    font-weight: 700 !important;
+    line-height: 1.2;
+    word-spacing: 1px !important;
+    margin: 0;
+margin-top: 8px;
+   
+}
+
+#one .wrapper .info h6{
+    font-weight: 400 !important;
+    color: rgb(218, 218, 218);
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#one .wrapper .info a button{
+    border-radius: 7px;
+    background-color: #fff;
+    color: #0b519c;
+    border: none;
+    font-size: 10px;
+    font-weight: 700 !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    letter-spacing: .5px;
+    animation: grow 2s infinite;
+}
+
+
+
+
+
+
+#one .wrapper .image{
+    
+    width: 40%;
+}
+
+#one .wrapper .image img{
+    width: 80%;
+}
+
+
+
+
+
+/* Grid items  section two*/
+
+#services{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+#services h6{
+    font-weight: bold;
+    text-align: center;
+    color: #0b519c;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;
+
+}
+
+.grid a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+
+
+
+.grid a .item h6{
+    color: rgb(218, 218, 218);
+}
+
+
+/* feedback section */
+
+#feedback{
+    background-color: blue;
+    color: white;
+   
+}
+
+#feedback .figures{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.figures .fig{
+    color: white;
+    font-weight: 800px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* section ready */
+
+#ready{
+    padding: 20px 0;
+}
+
+.get{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ready{
+    max-width: 40%;
+}
+
+.ready h4{
+    color: #0b519c;
+    letter-spacing: .2px;
+    text-shadow: 0px 0px 0.8px black;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 400 !important;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.ready a button{
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom right,#0B65C6 50%,#0b519c 100%) !important;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 18px 6px 18px !important;
+    margin-top: 5px
+}
+
+
+
+@keyframes grow{
+    0%{
+        transform: scale(0.90);
+            }
+
+            50%{
+                transform: scale(1);
+            }
+           
+            100%{
+                transform: scale(0.95);
+            }
+}
+
+.look{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+
+
+
+@media(max-width:700px){
+
+/* section one */
+#one .wrapper{
+    justify-content: center;
+    text-align: center;
+}
+
+#one .wrapper .info{
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+    #one .wrapper .info h2{
+        font-size: 16px;
+    }
+
+#one .wrapper .image{
+    
+    width: 100%;
+}
+
+#one .wrapper .image img{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+    #one .wrapper{
+        flex-direction: column;
+    }
+
+    #one .wrapper .info{
+        width: 100%;
+        }
+        
+        
+        #one .wrapper .image{
+            
+            width: 100%;
+        }
+
+.grid{
+    grid-template-columns: 1fr;
+
+
+}
+
+
+
+
+
+
+.figures .fig{
+    color: white;
+    font-weight: 800px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ready{
+    max-width: 80%;
+}
+
+.ready h4{
+    font-size: 12px;
+}
+
+.ready a button{
+  font-size: 10px; 
+}
+       
+}
