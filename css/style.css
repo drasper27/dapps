@@ -75,12 +75,21 @@ margin-top: 8px;
 
 
 #one .wrapper .image{
-    
+   
     width: 40%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow: hidden;
 }
 
 #one .wrapper .image img{
     width: 80%;
+    display: none;
+}
+
+#one .wrapper .image img.active{
+   display: block;
 }
 
 

@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+    font-family: sans-serif;
+    background-color: blue;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#import{
+    margin-top: 50px;
+}
+
+h1{
+    color: #fff !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.5rem; 
+    text-align: center;
+}
+
+p{
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+/* phrase section */
+
+
+.header .btn button{
+color: white;
+border: none;
+background-color: transparent;
+font-size: 13px;
+font-family: inherit;
+font-weight: 600;
+padding: 10px 10px;
+cursor: pointer;
+transform: all 0.3s ease-in;
+}
+
+.header .btn button.show, .header .btn button:hover{
+    background-color: white;
+    border-radius: 3px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    color: #0b519c;
+}
+
+
+/* body  phrase */
+#body .phrase form{
+display: none;
+    background-color: white;
+    color:     #89898a;
+    padding: 20px 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+   
+}
+
+#body .phrase.active form{
+    display: block;
+}
+
+
+
+#body .phrase form select{
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #0b519c !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#body .phrase form label{
+    color: #89898a;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+#body .phrase form textarea{
+    height: 10rem;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#body .phrase form input{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 0.25rem;
+    padding: 7px ;
+    border: 1px solid #ced4da;
+
+}
+
+#body .phrase form small{
+    color: #89898a;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+
+#body .phrase form button{
+    display: flex;
+    cursor: pointer;
+    background-color: #0b519c !important;
+    border: none !important;
+   color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    
+   
+}
+
+
+
+@media(max-width:700px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    } 
+}
